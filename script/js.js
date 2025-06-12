@@ -37,4 +37,8 @@ btn.addEventListener("click", () => {
   const arrCelle = document.querySelectorAll(".currCella");
   //seleziono le celle che hanno [num-1], ossia i numeri usciti, e aggiungo un ulteriore classe "selezionate"
   arrCelle[num - 1].classList.add("selezionate");
+
+  //seleziono il numero estratto e lo aggiorno in output all h2 con id "h2-draw"
+  const h2Draw = document.getElementById("h2-draw");
+  h2Draw.innerText = `The draw number is: ${num}`;
 });
