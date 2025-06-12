@@ -21,6 +21,17 @@ for (let i = 0; i < 76; i++) {
   container.appendChild(cella);
 }
 
+//EXTRA
+//prendo il riferimento dove appendere le celle player
+const playerCard = document.getElementById("player");
+//creo 24 celle e le appendo al contenitore
+for (let i = 0; i < 24; i++) {
+  const cella = document.createElement("div");
+  cella.classList.add("player-cella");
+  cella.innerText = getRandomNum();
+  playerCard.appendChild(cella);
+}
+
 //prendo il bottone dall html to Js
 const btn = document.querySelector("button");
 // aggiungo un ascoltatore d'eventi al bottone
@@ -37,6 +48,16 @@ btn.addEventListener("click", () => {
   const arrCelle = document.querySelectorAll(".currCella");
   //seleziono le celle che hanno [num-1], ossia i numeri usciti, e aggiungo un ulteriore classe "selezionate"
   arrCelle[num - 1].classList.add("selezionate");
+  //EXTRA
+  //devo fare Nodelist di .player-cella e aggiungere anche a loro "selezionate"
+  const playerCelle = document.querySelectorAll(".player-cella");
+  //le celle sono 24 e num-1 riporta un valore tra 1 e 76
+  //confonto ogni num con gli elementi della NodeList ottenuta e SE true, applico classe "selezionate"
+  playerCelle.forEach((cella) => {
+    if (parseInt(cella.innerText) === num) {
+      cella.classList.add("selezionate");
+    }
+  });
 
   //seleziono il numero estratto e lo aggiorno in output all h2 con id "h2-draw"
   const h2Draw = document.getElementById("h2-draw");
