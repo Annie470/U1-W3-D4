@@ -2,24 +2,21 @@
 body {
   font-family: "Yusei Magic", sans-serif;
 }
-header {
-  display: flex;
-  justify-content: center;
-}
 main {
   background-image: url("./11584182.png");
   background-size: cover;
-  background-position: center -100px;
-  padding-top: 10%;
+  background-position: center -130px;
+  padding-top: 5%;
   padding-left: 15%;
-  padding-right: 15%;
-  padding-bottom: 5%;
+  padding-right: 10%;
+  padding-bottom: 10%;
   width: 100vw;
   box-sizing: border-box;
 }
 h1 {
   font-size: 5rem;
-  margin-top: 40px;
+  margin-top: 2%;
+  margin-left: 10%;
   font-weight: 800;
 }
 span {
@@ -28,7 +25,7 @@ span {
 h2 {
   font-size: 2.5rem;
   color: white;
-  margin-bottom: 60px;
+  margin-bottom: 1em;
   display: inline-block;
 }
 form {
@@ -61,7 +58,7 @@ form button {
 }
 #h2-draw {
   display: block;
-  margin-top: 20px;
+  margin-top: 0.5em;
   padding-bottom: 20px;
   border-bottom: 1px solid;
   border-style: dotted;
@@ -85,14 +82,15 @@ footer {
   color: #a52a2a;
 }
 #player {
-  width: 50%;
-  padding-left: 35%;
-  margin-top: 20px;
+  width: 80%;
+  padding-left: 30%;
+  margin-top: 1em;
+  box-sizing: border-box;
 }
 
 h3 {
   font-size: 2.5rem;
   color: white;
   text-align: end;
-  margin-right: 15rem;
+  margin-right: 18rem;
 }
