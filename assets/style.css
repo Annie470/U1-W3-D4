@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Combo&family=Yusei+Magic&display=swap");
+body {
+  font-family: "Yusei Magic", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: center;
+}
+main {
+  background-image: url("./11584182.png");
+  background-size: cover;
+  padding: 280px;
+  width: 100vw;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 5rem;
+  margin-top: 40px;
+  font-weight: 800;
+}
+span {
+  color: brown;
+}
+h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 60px;
+
+  display: inline-block;
+}
+form {
+  display: inline-block;
+  width: 1000px;
+  border-bottom: 1px solid;
+  border-style: dotted;
+  border-radius: 10px;
+  color: #f7ecad;
+  box-sizing: border-box;
+}
+form button {
+  width: 60px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 2rem;
+  margin-left: 40px;
+}
+
+.currCella {
+  display: inline-block;
+  background-color: #f7ecad;
+  border: 1px solid;
+  margin: 0 10px 10px 10px;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 10px;
+  color: black;
+}
+
+.selezionate {
+  background-color: #a52a2a;
+  color: white;
+}
+
+footer {
+  box-sizing: border-box;
+  text-align: end;
+  padding: 30px 10px;
+  font-size: 2rem;
+  font-family: "Combo", system-ui;
+}
+#refresh {
+  margin: 20px;
+  margin-left: 350px;
+  width: 200px;
+  color: #a52a2a;
+}
